@@ -7,6 +7,9 @@
 *.obj
 *.elf
 
+# Binary
+labrabota3-1
+
 # Linker output
 *.ilk
 *.map
