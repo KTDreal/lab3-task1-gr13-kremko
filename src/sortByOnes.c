@@ -19,7 +19,23 @@ int countOnes(int number)
   return count;
 }
 
-void sortArrayByOnes(int array[])
+void sortArrayByOnes(int array[], int n)
 {
-  //TODO: Implement this function
+  int j = 0;
+  int temp = 0;
+  for (int i = 1; i < n; i++)
+  {
+      j = i - 1;
+      temp = 0;
+      if (countOnes(array[i]) < countOnes(array[j]))
+      {
+          while (j > 0 && countOnes(array[j]) < countOnes(array[j-1]))
+          {
+              temp = array[j];
+              array[j] = array[j-1];
+              array[j-1] = temp;
+              j--;
+          }
+      }
+  }
 }

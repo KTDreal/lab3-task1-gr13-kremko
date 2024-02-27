@@ -9,7 +9,7 @@
 #define interface_h
 
 int countOnes(int number);
-void sortArrayByOnes(int array[]);
+void sortArrayByOnes(int array[], int n);
 
 #endif /* interface_h */
 
