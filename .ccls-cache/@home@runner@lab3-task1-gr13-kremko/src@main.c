@@ -1,5 +1,11 @@
+//author: 
+//Timofey Kremko
+//
 /* main.c */
-//This file contains the main function, which calls the sortArrayByOnes function that sorts the randomly generated array of the given size from the command line parameteres by the number of ones in element's binary representation.
+//This file contains the main function, which calls the sortArrayByOnes function that sorts the randomly
+//generated array of the given size from the command line parameteres by the number of ones in element's
+//binary representation.
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

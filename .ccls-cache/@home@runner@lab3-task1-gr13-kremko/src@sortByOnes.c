@@ -1,3 +1,6 @@
+//author: 
+//Timofey Kremko
+//
 //CountOnes function counts the number of ones in a binary representation of number.
 //sortArrayByOnes function sorts the array by the number of ones in element's binary representation.
 
