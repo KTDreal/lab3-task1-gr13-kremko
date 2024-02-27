@@ -2,6 +2,7 @@
 //sortArrayByOnes function sorts the array by the number of ones in element's binary representation.
 
 #include "interface.h"
+#include <stdlib.h>
 
 int countOnes(int number)
 {
@@ -19,8 +20,13 @@ int countOnes(int number)
   return count;
 }
 
-void sortArrayByOnes(int array[], int n)
+int* sortArrayByOnes(int arr[], int n)
 {
+  int* array = malloc(n);
+  for (int i = 0; i < n; i++)
+  {
+    array[i] = arr[i];
+  }
   int j = 0;
   int temp = 0;
   for (int i = 1; i < n; i++)
@@ -29,6 +35,7 @@ void sortArrayByOnes(int array[], int n)
       temp = 0;
       if (countOnes(array[i]) < countOnes(array[j]))
       {
+          j = i;
           while (j > 0 && countOnes(array[j]) < countOnes(array[j-1]))
           {
               temp = array[j];
@@ -38,4 +45,5 @@ void sortArrayByOnes(int array[], int n)
           }
       }
   }
+  return array;
 }

@@ -20,11 +20,18 @@ int main (int argc, char* argv[])
   {
     array[i] = rand() % 101;
   }
+  printf( "Before sorting:\n" );
+  for (int i = 0; i < n; i++)
+  {
+    printf( "%d ", array[i] );
+  }
+  
+  int *resultArray = sortArrayByOnes(array, n);
 
-  sortArrayByOnes(array);
-   
+  printf("After sorting:\n");
+  
   for (int i = 0; i < n; i++) {
-    printf("%d ", array[i]);
+    printf("%d ", resultArray[i]);
   }
   
   return 0;
