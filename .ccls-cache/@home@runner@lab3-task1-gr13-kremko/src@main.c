@@ -24,7 +24,7 @@ int main (int argc, char* argv[])
   int array[n];
   for (int i = 0; i < n; i++) 
   {
-    array[i] = rand() % 101;
+    array[i] = rand()%1000 + 1;
   }
   printf( "Before sorting:\n" );
   for (int i = 0; i < n; i++)
@@ -34,7 +34,8 @@ int main (int argc, char* argv[])
   
   int *resultArray = sortArrayByOnes(array, n);
 
-  printf("After sorting:\n");
+
+  printf("\nAfter sorting:\n");
   
   for (int i = 0; i < n; i++) {
     printf("%d ", resultArray[i]);
